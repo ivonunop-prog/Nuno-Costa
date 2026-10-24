@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <rect width="512" height="512" rx="112" fill="#0F172A"/>
+  <!-- Left Card: Fuel Icon -->
+  <rect x="76" y="136" width="164" height="240" rx="28" fill="#1E293B" stroke="#334155" stroke-width="6"/>
+  <path d="M128 216V304M128 216H172V256H128M172 232L192 248V292C192 298.627 186.627 304 180 304" stroke="#38BDF8" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="150" cy="180" r="10" fill="#38BDF8"/>
+  <!-- Right Card: Shopping Cart Icon -->
+  <rect x="272" y="136" width="164" height="240" rx="28" fill="#1E293B" stroke="#334155" stroke-width="6"/>
+  <path d="M312 208H326L340 276H388L400 228H332" stroke="#34D399" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="346" cy="304" r="10" fill="#34D399"/>
+  <circle cx="382" cy="304" r="10" fill="#34D399"/>
+</svg>

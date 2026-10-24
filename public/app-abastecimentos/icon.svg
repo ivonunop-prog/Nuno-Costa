@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Gradiente Oficial Montalva / Izidoro (Rubi -> Vermelho Izidoro -> Âmbar Dourado) -->
+    <linearGradient id="montalvaIzidoroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9E1B32"/>
+      <stop offset="55%" stop-color="#E30613"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <linearGradient id="nozzleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+    <linearGradient id="dropGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <filter id="shadowMontalva" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#4a0512" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- Fundo Squircle com Gradiente Montalva Izidoro -->
+  <rect width="512" height="512" rx="124" fill="url(#montalvaIzidoroGrad)"/>
+
+  <!-- Brilho Superior Curvo -->
+  <path d="M0 124 C0 55.5 55.5 0 124 0 L388 0 C456.5 0 512 55.5 512 124 L512 210 Q256 160 0 210 Z" fill="#ffffff" opacity="0.14"/>
+
+  <!-- Grupo Principal da Bomba -->
+  <g filter="url(#shadowMontalva)">
+    <!-- Corpo da bomba -->
+    <rect x="130" y="110" width="170" height="290" rx="36" fill="url(#nozzleGrad)"/>
+    
+    <!-- Base da bomba -->
+    <rect x="105" y="375" width="220" height="30" rx="15" fill="#f1f5f9"/>
+
+    <!-- Ecrã LCD Escuro -->
+    <rect x="150" y="145" width="130" height="85" rx="18" fill="#0f172a"/>
+    <rect x="156" y="151" width="118" height="73" rx="14" fill="#020617"/>
+    
+    <!-- Dígitos no Ecrã (Preço e Litros) -->
+    <text x="215" y="186" fill="#38bdf8" font-family="-apple-system, system-ui, monospace" font-size="24" font-weight="900" text-anchor="middle" letter-spacing="1">€ 1.74</text>
+    <text x="215" y="212" fill="#10b981" font-family="-apple-system, system-ui, monospace" font-size="16" font-weight="800" text-anchor="middle">45.0 L</text>
+
+    <!-- Gota de Combustível Central -->
+    <path d="M215 250 C195 285 180 305 180 325 A35 35 0 0 0 250 325 C250 305 235 285 215 250 Z" fill="url(#dropGrad)"/>
+
+    <!-- Mangueira Lateral -->
+    <path d="M300 170 C365 170 395 210 395 280 C395 330 375 365 345 365 C325 365 315 350 315 335 C315 305 355 295 355 240 C355 205 335 190 300 190" 
+          fill="none" stroke="#ffffff" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Pistola / Agulhete de Abastecimento -->
+    <path d="M335 195 L365 150 L388 165 L360 215 Z" fill="#ffffff"/>
+    <path d="M365 150 L400 135" stroke="#ffffff" stroke-width="14" stroke-linecap="round"/>
+    <!-- Gatilho em Vermelho Izidoro -->
+    <path d="M348 200 C365 220 375 220 380 205" fill="none" stroke="#E30613" stroke-width="6" stroke-linecap="round"/>
+  </g>
+</svg>

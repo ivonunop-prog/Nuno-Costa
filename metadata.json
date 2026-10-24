@@ -1,0 +1,6 @@
+{
+  "name": "Central de Gestão: Abastecimentos & Compras",
+  "description": "Plataforma integrada 2-em-1 para gestão de abastecimentos de combustível e gestor de compras inteligente.",
+  "requestFramePermissions": ["geolocation", "camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
